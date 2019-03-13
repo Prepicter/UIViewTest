@@ -24,12 +24,8 @@ class ViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: UIButton) {
         print("반갑다")
         myLabel.text = "button Pressed"
-        if myView.backgroundColor == UIColor.blue {
-            myView.backgroundColor = UIColor.red
-        } else {
-            myView.backgroundColor = UIColor.blue
-
-        }
+        let color = myView.backgroundColor == UIColor.blue ? UIColor.red : UIColor.blue
+        myView.backgroundColor = color
 
     }
     
